@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQueryCSS Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+
+    <!-- jQueryCss Color script -->
+    <script>
+        $(document).ready(function () {
+            // Färbt alle Zellen, Aufgabe 3
+            $("tr").addClass("colored");
+
+            // Färbt bei mouseover die Zellen, Aufgabe 4
+            $("tr").mouseover(function () {
+                // Mit this greift man auf das Element zu, hier "tr"
+                $(this).addClass("mouseon");
+            });
+
+            // Das addClass wieder entfernen, Aufgabe 5
+            $("tr").mouseout(function () {
+                $(this).removeClass("mouseon");
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- jQuery CSS Aufgabe Erklärung
+        ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">jQuery CSS Aufgabe</h1>
+                <p>
+                    1) Als Start müssen Sie ein HTML-Gerüst im «body» erstellen.
+                </p>
+                <p class="lead">Aufgabenstellung</p>
+                <p>
+                    1)	Um die Tabelle klarer zu gestalten, passen Sie das CSS an, sodass die Ausgabe in der gleichen Art wie unten aufgeführt aussieht:
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryCSS.png" />
+                <p>
+                    Es ist wichtig, dass Sie eine eigene CSS-Datei verwenden und nicht die von Bootstrap.
+                    Andernfalls würde bei einem Update alles verloren gehen.
+                </p>
+                <p>
+                    2) Als Nächstes ist eine Klasse nötig, um die Zellen einzufärben. Dafür gehen Sie über die Zeile «tr»,
+                    erstellen Sie eine Klasse «colored» und weisen Sie diese der Zelle zu. Im Beispiel wird die Farbe «#fafad2» zugewiesen.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryCSSTabelle.png" width="800" height="150" />
+                <p>Jetzt könnte man bei jeder Zeile «tr» die Klasse «colored» einfügen, was aber viel zu aufwändig ist. </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryCssColor.png" />
+                <p>3) Erstellen Sie ein jQuery-Skript, das allen «tr»-Tags die Farbe zuweist.</p>
+                <p>
+                    4) Nun möchten Sie die Farbe ändern, wenn der Mauszeiger sich über einer Zelle befindet. Dafür erstellen Sie ein
+                    weiteres CSS-Format «mouseon» mit der Farbe «#1e90ff». Fügen Sie die geforderte Funktionalität mit jQuery ein.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryCssLoesung.png" width="700" height="150" />
+                <p>
+                    5)	Wenn eine Zeile mit der Maus eingefärbt ist, dann bleibt diese bestehen. Darum braucht es noch ein jQuery-Skript,
+                    das beim Verlassen einer Zelle die Farbe wieder zurückstellt. Implementieren Sie diese Funktionalität mit jQuery.
+                </p>
+
+                <hr class="featurette-divider">
+                <!--Die Lösung:-->
+                <h2 class="featurette-heading">Lösungen</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <tr>
+                                <th>Vorname</th>
+                                <th>Nachname</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Susanne</td>
+                                <td>Muster</td>
+                            </tr>
+                            <tr>
+                                <td>Rudi</td>
+                                <td>Rüssel</td>
+                            </tr>
+                            <tr>
+                                <td>Bert</td>
+                                <td>Baumann</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQueryOut Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- jQueryOut Aufgabe Erklärung
+        ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">jQueryOut Aufgabe</h1>
+                <p class="lead">Aufgabenstellung</p>
+                <p class="lead"><b>Wichtig:</b> Alles mit jQuery!</p>
+
+                <p>1) Erzeugen Sie mit jQuery das CSS, sodass die Seite wie folgt aussieht:</p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryOut.png" />
+                <ol>
+                    <li>Mainheader – ein Abstand von 20px</li>
+                    <li>Die Farbe des «maintext» muss #0769AA sein</li>
+                    <li>Alle p-Elemente im Footer sollen fett geschrieben sein</li>
+                </ol>
+                <p>
+                    2) Erstellen Sie im «js»-Ordner eine Datei «my.js» und speichern Sie darin den Code von der Aufgabe 1. Verlinken Sie diese Datei,
+                    sodass die Seite wie gefordert angezeigt wird.
+                </p>
+
+                <p>3) Wenn auf das Bild geklickt wird, muss ein Rahmen um das Logo erstellt werden. Der Text soll vergrössert werden.</p>
+
+                <p>Der Text im Footer soll durch den Klick verändert werden: «Doppelklick verkleinert wieder…».</p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryOutBig.png" />
+                <p>
+                    4) Erstellen Sie eine weitere Funktion mit jQuery: wenn auf das Logo ein Doppelklick gemacht wird,
+                    soll alles wieder wie vor dem Klick sein.
+                </p>
+
+                <hr class="featurette-divider">
+
+                <!--Die Lösung:-->
+                <h2 class="featurette-heading">Lösungen</h2>
+                <img id="mainheader" src="../../Pics/jQuery/jQueryLogo.png" width="400" />
+                <p class="maintext">
+                    jQuery ist die meistverwendete JavaScript-Bibliothek. Jede zweite Website und drei Viertel der 10.000
+                    meistbesuchten Websites nutzen jQuery (Stand: Juli 2014). jQuery wird in vielen Content-Management-Systemen und Webframeworks
+                    bereits mitgeliefert, zum Beispiel in Joomla, WordPress, MediaWiki oder Drupal.
+                </p>
+
+                <div id="footer">
+                    <p>Klicke auf das Logo</p>
+                </div>
+
+                <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

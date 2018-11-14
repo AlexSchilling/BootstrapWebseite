@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQueryCSS Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Hilfsvariable für Wechsel
+            var style = 0;
+            $('body').click(function () {
+                if (style == 0) {
+                    style = 1;
+                    $("#bild").attr('src', "../../Pics/jQuery/gimp-logo.png");
+                } else {
+                    style = 0;
+                    $("#bild").attr('src', "../../Pics/jQuery/image/gimp-logo_transparent.png");
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $('.slider').mouseenter(function () {
+                $('.upndown img').slideDown('slow');
+            });
+
+            $('.upndown').mouseleave(function () {
+                $('.upndown img').slideUp('slow');
+            });
+        });
+    </script>
+
+
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- jQuery CSS Aufgabe Erklärung
+        ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">jQuery CSS Aufgabe</h1>
+
+                <p class="lead">Aufgabenstellung</p>
+                <p>
+                    1)	Erstellen Sie eine Startseite, bei der Sie das transparente Bild «gimp-logo_transparent.png» verwenden.
+                    Das Bild soll eine Breite von 500px haben. Damit der transparente Hintergrund auch sichtbar wird,
+                    müssen Sie eine Hintergrundfarbe (#223344) für den Body verwenden. Die Schrift soll die Farbe «#FF9F00» erhalten.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryBild1.png" width="600" height="300" />
+                <p>
+                    2)	Erstellen Sie aus dem transparenten Bild ein Bild mit farbigem Hintergrund.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryBild2.png" width="600" height="300" />
+                <p>Erstellen Sie mit jQuery die Funktion, die bei jedem Klick das Bild wechselt.</p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryBild3.png" />
+                <p>3)	Erstellen Sie eine zweite Website «Animation» und fügen Sie das animierte GIF aus dem früheren Auftrag ein.</p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryBild4.png" />
+                <p>
+                    Informieren Sie sich über die verschiedenen Funktionen von jQuery, um Bilder zu animieren.
+                    Verwenden Sie die Funktion «slideUp» und «slideDown» um das Bild ein- und auszublenden.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryBild5.png" />
+                <p>
+                    4)	Erstellen Sie eine neue Site und spielen Sie mit den Animationen und Effekten, die Ihnen mit jQuery zur Verfügung stehen.
+                </p>
+
+                <hr class="featurette-divider">
+                <!--Die Lösung:-->
+                <h2 class="featurette-heading">Lösung</h2>
+                <div id="background" class="container">
+                    <p class="lead">Klick mich</p>
+                    <!-- Lösung Aufgabe 1 -->
+                    <img id="bild" src="../../Pics/jQuery/gimp-logo_transparent.png" width="500" alt="Transparentes GIMP Logo">
+                    <p>Klicke auf dieser Webseite ...</p>
+                </div>
+
+                <hr class="featurette-divider"> 
+
+                <p class="lead">Animiertes Bild</p>
+                <div class="upndown">
+                    <img id="bild" src="../../Pics/jQuery/animiertesbild.gif" width="500" alt="Animiertes GIF">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div class="slider">slideUp, slideDown der Mauszeiger öffnet das Bild</div>
+                    <hr class="featurette-divider">
+
+                </div>
+
+
+                <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

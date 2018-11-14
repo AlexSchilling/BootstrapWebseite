@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQuerySound Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+
+    <!-- Lösung 3: Sound per Tastendruck -->
+    <script>
+        $(document).ready(function () {
+            $("#number1").css("font-weight", "normal");
+            var audioElement1 = document.createElement('audio');
+            audioElement1.setAttribute('src', 'musik/Galactic_Damages.mp3');
+            audioElement1.setAttribute('volume', '0.5');
+
+            var audioElement2 = document.createElement('audio');
+            audioElement2.setAttribute('src', 'musik/Finding_the_Balance.mp3');
+            audioElement2.setAttribute('volume', '0.5');
+
+            var audioElement3 = document.createElement('audio');
+            audioElement3.setAttribute('src', 'musik/Epic_Unease.mp3');
+            audioElement3.setAttribute('volume', '0.5');
+
+            var audioElement4 = document.createElement('audio');
+            audioElement4.setAttribute('src', 'musik/Blue_Skies.mp3');
+            audioElement4.setAttribute('volume', '0.5');
+
+
+            document.onkeydown = function (event) {
+                if (event.keyCode == 49) {
+                    document.getElementById('one').play();
+                    audioElement1.play();
+                    audioElement2.pause();
+                    audioElement3.pause();
+                    audioElement4.pause();
+                    $("#number1").css("font-weight", "bold");
+                    $("#number2").css("font-weight", "normal");
+                    $("#number3").css("font-weight", "normal");
+                    $("#number4").css("font-weight", "normal");
+                    $("#stop").css("font-weight", "normal");
+                } else if (event.keyCode == 50) {
+                    document.getElementById('two').play();
+                    audioElement2.play();
+                    audioElement1.pause();
+                    audioElement3.pause();
+                    audioElement4.pause();
+                    $("#number2").css("font-weight", "bold");
+                    $("#number1").css("font-weight", "normal");
+                    $("#number3").css("font-weight", "normal");
+                    $("#number4").css("font-weight", "normal");
+                    $("#stop").css("font-weight", "normal");
+                } else if (event.keyCode == 51) {
+                    document.getElementById('three').play();
+                    audioElement3.play();
+                    audioElement1.pause();
+                    audioElement2.pause();
+                    audioElement4.pause();
+                    $("#number3").css("font-weight", "bold");
+                    $("#number1").css("font-weight", "normal");
+                    $("#number2").css("font-weight", "normal");
+                    $("#number4").css("font-weight", "normal");
+                    $("#stop").css("font-weight", "normal");
+                } else if (event.keyCode == 52) {
+                    document.getElementById('four').play();
+                    audioElement4.play();
+                    audioElement1.pause();
+                    audioElement2.pause();
+                    audioElement3.pause();
+                    $("#number4").css("font-weight", "bold");
+                    $("#number1").css("font-weight", "normal");
+                    $("#number2").css("font-weight", "normal");
+                    $("#number3").css("font-weight", "normal");
+                    $("#stop").css("font-weight", "normal");
+                } else if (event.keyCode == 81) {
+                    audioElement1.pause();
+                    audioElement1.currentTime = 0;
+                    audioElement2.pause();
+                    audioElement2.currentTime = 0;
+                    audioElement3.pause();
+                    audioElement3.currentTime = 0;
+                    audioElement4.pause();
+                    audioElement4.currentTime = 0;
+                    $("#number1").css("font-weight", "normal");
+                    $("#number2").css("font-weight", "normal");
+                    $("#number3").css("font-weight", "normal");
+                    $("#number4").css("font-weight", "normal");
+                    $("#stop").css("font-weight", "bold");
+                } else {
+                    alert("Bitte nur Tasten 1, 2, 3, 4 oder Q drücken!");
+                }
+            }
+
+            audioElement1.setAttribute('volume', '0.2');
+            audioElement1.play();
+            audioElement2.pause();
+            audioElement3.pause();
+            audioElement4.pause();
+            $("#number1").css("font-weight", "bold");
+            $("#number2").css("font-weight", "normal");
+            $("#number3").css("font-weight", "normal");
+            $("#number4").css("font-weight", "normal");
+            $("#stop").css("font-weight", "normal");
+        });
+    </script>
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- jQuery Sound Aufgabe Erklärung
+        ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">Musik Player</h1>
+                <p>Anleitung: Folgende Lieder können gewählt werden:</p>
+
+                <audio id="one" controls="controls" hidden>
+                    <source src="../../Sounds/Galactic_Damages.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="two" controls="controls" hidden>
+                    <source src="../../Sounds/Finding_the_Balance.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="three" controls="controls" hidden>
+                    <source src="../../Sounds/Epic_Unease.ogg" type="audio/mpeg" />
+                </audio>
+                <audio id="four" controls="controls" hidden>
+                    <source src="../../Sounds/Blue_Skies.mp3" type="audio/mpeg" />
+                </audio>
+
+                <p id="number1">Taste 1 => Galactic Damages</p>
+                <p id="number2">Taste 2 => Finding the Balance</p>
+                <p id="number3">Taste 3 => Epic Unease</p>
+                <p id="number4">Taste 4 => Blue Skies</p>
+                <p id="stop">Taste Q => Stop</p>
+            </div>
+        </div>
+
+        <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+﻿body {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    margin-top: 1.5rem;
+}
+
+.featurette-heading {
+    font-weight: 500;
+    letter-spacing: 3px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.featurette-divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-link {
+    color: black;
+}
+
+#aufgaben {
+    font-size: 18px;
+}
+
+    #aufgaben.enter {
+        font-size: 18px;
+        color: white;
+        background-color: #3d3d3d;
+    }
+
+.card-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: #0077ff;
+}
+
+#footer {
+    margin-bottom: 20px;
+}
+
+#beispiel {
+    border-style: solid;
+    border-color: #0077ff;
+    border-width: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#mainheader {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.card-img-top {
+    margin-top: 20px;
+}
+
+tr.colored td {
+    background-color: #fafad2;
+}
+
+tr.mouseon td {
+    background-color: #1e90ff;
+}
+
+h4{
+    padding-top: 20px;
+}
+
+#backLink{
+    padding-top: 30px;
+}
+#mouseAbsatz{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#background {
+    background-color: #223344;
+    color: #FF9F00;
+}

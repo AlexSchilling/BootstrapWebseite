@@ -1,0 +1,209 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Dokumentation-Website mit Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/CSS/Home.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Alexander Schilling</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Page/Home.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Page/jQuery.html">jQuery &amp; Aufgaben</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Weiteres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                            <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                            <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide" src="../Pics/Home/main.png" alt="First slide">
+
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>Dokumentations-Website mit Bootstrap</h1>
+                            <p>Modul 152</p>
+                            <p><a class="btn btn-lg btn-primary" href="Bootstrap.html" role="button">Was ist Bootstrap?</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide" src="../Pics/Home/jqueryCodeBlurred.png" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>jQuery Aufgaben</h1>
+                            <p>Dieses Modul gab uns die Möglichkeit, jQuery zu lernen. Wir haben an vielen Übungen gearbeitet, um zu sehen, wozu jQuery fähig ist.</p>
+                            <p><a class="btn btn-lg btn-primary" href="../Page/jQuery.html" role="button">Zu jQuery</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide" src="../Pics/Home/ventimiglia.png" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>Video mit Bootstrap integrieren</h1>
+                            <p>Ich habe ein Video über die vier Austauschwochen in Nizza gemacht.</p>
+                            <p>Dieses Bild wurde in Ventimiglia, Italien aufgenommen.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#video" role="button">Video ansehen</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="featurette-image" src="../Pics/Home/htmlLogo.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>HTML</h2>
+                    <p>HTML ist eine Abkürzung für "Hypertext Markup Language". HTML ist heute der wichtigste Auszeichnungsstandard im Internet. Er ist Voraussetzung für die Programmierung und das Design von Webinhalten. Andere Standards wie PHP bauen in erheblichem Maße auf HTML auf.</p>
+                    <p><a class="btn btn-lg btn-primary" href="/Page/HtmlPage.html" role="button">Mehr Infos &raquo;</a></p>
+
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <img class="featurette-image" src="../Pics/Home/cssLogo.png" alt="Generic placeholder image" width="140" height="140">
+                    <h2>CSS</h2>
+                    <p>CSS bedeutet ausgeschrieben "Cascading Style Sheet" und ist eine Gestaltungs- und Formatierungssprache vor allem für Internetseiten. Sie ist Standard bei heutigem Webdesign und Layout. Mit Hilfe von CSS können nicht nur einfache Texte und Inhalte einer Webseite dargestellztund formatiert werden, sondern auch interaktive Elemente wie Navigationen aufgebaut werden.</p>
+                    <p><a class="btn btn-lg btn-primary" href="/Page/CssPage.html" role="button">Mehr Infos &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+
+                <div class="col-lg-4">
+                    <img class="featurette-image" src="../Pics/Home/jQuery.jpg" alt="Generic placeholder image" width="140" height="140">
+                    <h2>jQuery</h2>
+                    <p>jQuery ist eine JavaScript-Bibliothek, die frei verfügbar ist. Diese bietet viele und einfache Funktionen zur Manipulation und Navigation von DOM (Document Object Model)-Elementen.</p>
+                    <p><a class="btn btn-lg btn-primary" href="/Page/jQuery.html" role="button">Mehr Infos &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+
+            </div><!-- /.row -->
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider"  id="video">
+
+            <section class="text-center">
+                <div class="container">
+                    <h1 class="featurette-heading">Sprachaufenthalt Nizza</h1>
+                    <p class="lead text-muted">16.September bis 13.Oktober</p>
+
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <video controls="controls">
+                            <source src="../Video/1080p.MOV" type="video/quicktime" />
+                        </video>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="featurette-divider">
+
+            <h2>Video mit Bootstrap integrieren (Aufgabe 7732_Moviemaker)</h2>
+            <p></p>
+            <h4><b>Aufgabenstellung</b></h4>
+            <p></p>
+            <p>Erstellen Sie in 2-er bis 3-er Gruppen einen Werbespot über Multimedia, der mindestens 30, maximal 60 Sekunden lang ist.</p>
+            <p>Mindestens die Hälfte des Filmmaterials muss selbst gedreht sein. Verwenden Sie nur Fremdmaterial von guter Qualität, die meisten Filme aus dem Internet haben nur ungenügende Qualität.</p>
+            <p>Der Werbespot soll mindestens 5 Schnitte enthalten, wobei mindestens 2 Überblendungen benutzt werden müssen.</p>
+            <p>Der Film soll am Anfang oder am Schluss den Filmtitel, die Namen der Filmteammitglieder, die Bezeichnung «Modul_152» und das Datum enthalten.</p>
+
+            <h5><b>Vorgehen:</b></h5>
+            <p>Machen Sie einen Plan, welche Aufnahmen Sie brauchen.</p>
+            <p>Filmen Sie die einzelnen Szenen [Thema: Filmen].</p>
+            <p>Übertragen Sie das Filmmaterial auf den PC [Thema: Film einlesen].</p>
+            <p>Schneiden und vertonen Sie den Werbespot [Thema: Schneiden, Komprimieren].</p>
+
+            <h5><b>Speichern des Videos:</b></h5>
+            <ol>
+                <li>Als Video-CD-File</li>
+                <li>Komprimiert, sodass der Film über das Internet lauffähig ist.</li>
+            </ol>
+
+            <hr class="featurette-divider">
+
+            <h3>Über das Video</h3>
+            <p>Ich habe dieses Projekt alleine gemacht, weil unser Lehrer uns die Erlaubnis gegeben hat</p>
+            <p>In diesem Video sehen Sie Szenen aus vielen verschiedenen Städten, die ich während meiner Sprachaufenthalt besucht habe:</p>
+            <ul>
+                <li>Nizza</li>
+                <li>Cannes</li>
+                <li>Villefranche</li>
+                <li>Monaco</li>
+                <li>Ventimiglia</li>
+                <li>Sanremo</li>
+            </ul>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Zurück nach oben</a></p>
+            <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+        </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/Scripts/popper.min.js"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

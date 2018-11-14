@@ -1,0 +1,210 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQuerySound Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+
+    <script>
+        document.addEventListener('keydown', function (event) {
+            if (event.keyCode == 37) {
+                document.getElementById('left').play();
+            }
+            else if (event.keyCode == 39) {
+                document.getElementById('right').play();
+            }
+            else if (event.keyCode == 40) {
+                document.getElementById('down').play();
+            }
+            else if (event.keyCode == 38) {
+                document.getElementById('up').play();
+            }
+            else if (event.keyCode == 49) {
+                document.getElementById('one').play();
+            }
+            else if (event.keyCode == 50) {
+                document.getElementById('two').play();
+            }
+            else if (event.keyCode == 51) {
+                document.getElementById('three').play();
+            }
+        });
+    </script>
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- jQuery Sound Aufgabe Erklärung
+    ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">jQuery Sound Aufgabe</h1>
+                <p class="lead">Aufgabenstellung</p>
+                <p>
+                    1)	Richten Sie Ihre Startseite so ein, dass beim Start der Index-Seite das MP3-File «Epic_Unease.mp3» abgespielt wird.
+                    Bitte denken Sie daran, dass es mit HTML5 das «audio»-Tag gibt.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryMusik.png" />
+                <p>
+                    2)	Um den Besucher der Webseite nicht zu erschrecken, stellen Sie den Player so ein,
+                    dass er nur mit Lautstärke von 50% startet.
+                </p>
+                <p>
+                    3)	Erstellen Sie eine neue Seite «sound.html». Bei dieser Seite sollen die Tastendrücke abgefangen und als Sound wiedergegeben werden.
+                    Folgende Tasten sind zu implementieren:
+                </p>
+                <ul>
+                    <li>Taste 1 => numberOne.mp3</li>
+                    <li>Taste 2 => numberTwo.mp3</li>
+                    <li>Taste 3 => numberThree.mp3</li>
+                    <li>Taste Up => moveUp.mp3</li>
+                    <li>Taste Down => moveDown.mp3</li>
+                    <li>Taste Left => left.mp3</li>
+                    <li>Taste Right => right.mp3</li>
+                </ul>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryTaste.png" />
+                <p>
+                    4)	Erstellen Sie eine neue Seite «player.html». Diese Seite wird ein selbst programmierter Musikplayer sein. Folgende Tasten sind zu belegen:
+                </p>
+                <ul>
+                    <li>Taste 1 => Galactic_Damages.mp3</li>
+                    <li>Taste 2 => Finding_the_Balance.mp3</li>
+                    <li>Taste 3 => Epic_Unease.mp3</li>
+                    <li>Taste 4 => Blue_Skies.mp3</li>
+                </ul>
+                <p>
+                    Es muss so programmiert sein, dass wenn Sie zwischen den Liedern wechseln, die Lieder da weitermachen,
+                    wo Sie beim Umschalten waren (Pause-Funktion). Wenn Q geklickt wird, sollen alle Lieder gestoppt werden,
+                    sprich dann beginnen die Lieder ab diesem Moment (alle) wieder von vorne.
+                </p>
+                <p>
+                    Ausserdem soll mit fetter Schriftart angezeigt werden, welches Lied gerade abgespielt wird.
+                    Zum Beginn wird das erste Lied abgespielt.
+                </p>
+                <p>
+                    Wenn eine andere Taste gedrückt wird, soll eine Meldung angezeigt werden,
+                    dass nur gültige Tasten gedrückt werden dürfen:
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryMeldung.png" />
+                <p></p>
+                <img id="beispiel" src="../../Pics/jQuery/jQueryPlayer.png" />
+
+                <hr class="featurette-divider">
+
+                <!--Die Lösung:-->
+                <h2 class="featurette-heading">Lösungen</h2>
+
+                <h4>Musik auf meiner Webiste</h4>
+                <audio controls="controls">
+                    <source src="../../Sounds/Epic_Unease.mp3" type="audio/mpeg" />
+                </audio>
+                <hr class="featurette-divider">
+
+                <h4>Lautstärke 50%</h4>
+                <p>Funktioniert nicht</p>
+                <hr class="featurette-divider">
+
+                <h4>Musik per Tastendruck</h4>
+
+                <p class="lead">KeySound</p>
+                <p>Anleitung: Folgende Tasten erzeugen Sound(1, 2, 3, Up, Down, Left, Right)</p>
+
+                <audio id="left" controls="controls" hidden>
+                    <source src="../../Sounds/left.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="right" controls="controls" hidden>
+                    <source src="../../Sounds/right.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="down" controls="controls" hidden>
+                    <source src="../../Sounds/moveDown.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="up" controls="controls" hidden>
+                    <source src="../../Sounds/moveUp.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="one" controls="controls" hidden>
+                    <source src="../../Sounds/numberOne.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="two" controls="controls" hidden>
+                    <source src="../../Sounds/numberTwo.mp3" type="audio/mpeg" />
+                </audio>
+                <audio id="three" controls="controls" hidden>
+                    <source src="../../Sounds/numberThree.mp3" type="audio/mpeg" />
+                </audio>
+                <hr class="featurette-divider">
+                <h4>Musik Player</h4>
+                
+
+                <h4>Lustig</h4>
+                <audio id="kid" controls="controls">
+                    <source src="../../Sounds/Kid%20-%20screams.mp3" type="audio/mpeg" />
+                </audio>
+            </div>
+        </div>
+
+        <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

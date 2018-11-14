@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <title>jQueryMove Aufgabe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="../../js/ie-emulation-modes-warning.js"></script>
+    <!--jQuery Einbindung-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../../CSS/jQuery.css" rel="stylesheet" />
+
+    <!--JavaScript Datei link-->
+    <script src="../../js/myjs.js"></script>
+
+    <!-- jQueryMove script -->
+    <script>
+        $(document).ready(function () {
+            var linkerAbstand = 350;
+            var verschiebeUeberschrift = function () {
+                $("#ueberschrift").offset({ left: linkerAbstand });
+
+                linkerAbstand++;
+
+                if (linkerAbstand > 700) {
+                    linkerAbstand = 350;
+                }
+            };
+            setInterval(verschiebeUeberschrift, 20);
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var Abstand = 1000;
+            var Big = 1;
+
+            // Zeichenkette
+            var rainChars = '1234567890ABCDEFX';
+
+            // Setzt Standardgrösse 1em
+            $("#a").css("font-size", Big + "em");
+
+            var verschiebeUeberschrift = function () {
+                $("#a").offset({ top: Abstand });
+
+                Big++
+                Abstand++;
+
+                // Verändert die Grösse des Zeichen
+                $("#a").css("font-size", Big + "em");
+
+
+                if (Abstand > 1020) {
+                    Abstand = 1000;
+                    Big = 1;
+
+                    // Könnte alles in einem geschrieben werden
+                    var c = Math.floor(Math.random() * rainChars.length);
+                    var digit = rainChars.charAt(c);
+                    $("#a > p").text(digit);
+                }
+            };
+
+            // Ist die Geschwindigkeit
+            setInterval(verschiebeUeberschrift, 50);
+        });
+    </script>
+
+
+</head>
+<body>
+    <main class="container">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <a class="navbar-brand" href="#">Alexander Schilling</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Page/Home.html">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Weiteres
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                                <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                                <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <!-- jQuery Move Aufgabe Erklärung
+    ================================================== -->
+        <div class="row featurette">
+            <div class="col-md-10">
+                <h1 class="featurette-heading">jQuery Move Aufgabe</h1>
+                <p class="lead">Aufgabenstellung</p>
+                <p>
+                    1) Analysieren Sie, wie der bewegte Text entsteht. Übernehmen Sie diese Informationen in Ihre Projektwebseite.
+                </p>
+                <h1 id="ueberschrift">This text is moving!</h1>
+
+                <p>2) Erstellen Sie eine Seite, die ein zufälliges Zeichen von oben herabregnen lässt.</p>
+                <img id="beispiel" src="../../Pics/jQuery/move.png" width="300" height="200" />
+
+                <p>Die Zeichenkette kann wie folgt gespeichert werden:</p>
+
+                <img id="beispiel" src="../../Pics/jQuery/moveZeichenkette.png" width="400" height="50" />
+
+                <p>
+                    Wenn das Zeichen beginnt, von oben herabzufallen, muss es immer die Grösse «1em» haben,
+                    die sich immer weiter erhöht, wenn das Zeichen runterfällt.
+                </p>
+                <img id="beispiel" src="../../Pics/jQuery/moveNumber.png" width="400" height="120" />
+
+                <hr class="featurette-divider">
+
+                <!--Die Lösung:-->
+                <h2 class="featurette-heading">Lösung</h2>
+                <p></p>
+                <p></p>
+                <div id="a">
+                    <p>A</p>
+                </div>
+                <p></p>
+                <p></p>
+                <p class="link" id="backLink"><a href="../jQuery.html">Zurück zu den Aufgaben</a></p>
+
+            </div>
+        </div>
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="container">
+        <hr class="featurette-divider">
+        <p class="float-right link"><a href="#">Zurück nach oben</a></p>
+        <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+    </footer>
+
+    <!-- Bootstrap-JavaScript
+    ================================================== -->
+    <!-- Am Ende des Dokuments platziert, damit Seiten schneller laden -->
+    <script src="../../js/bootstrap.min.js"></script>
+    <!-- IE10-Anzeigefenster-Hack für Fehler auf Surface und Desktop-Windows-8 -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

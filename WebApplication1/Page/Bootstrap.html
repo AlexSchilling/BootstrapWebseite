@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Dokumentation-Website mit Bootstrap</title>
+    <meta charset="utf-8" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="/Content/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../CSS/Bootstrap.css" rel="stylesheet" />
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Alexander Schilling</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Page/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Page/Bootstrap.html">Bootstrap <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Page/jQuery.html">jQuery & Aufgaben</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Weiteres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/Page/HtmlPage.html">HTML</a>
+                            <a class="dropdown-item" href="/Page/CssPage.html">CSS</a>
+                            <a class="dropdown-item" href="/Page/Grid-System.html">Grid-System</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="jumbotron">
+            <div class=" container">
+                <h1 class=" display-3">Bootstrap</h1>
+                <p class="lead">Hier wird erklärt, was Bootstrap ist und wie man es installieren kann.</p>
+
+                <p>&raquo; freies CSS-Framework</p>
+
+                <p>&raquo; enthält auf HTML und CSS basierende Gestaltungsvorlagen</p>
+                <p>&raquo; Bootstrap wird standardmäßig mit einem 940 Pixel breiten, zwölfspaltigen Grid-Layout ausgeliefert</p>
+                <p>&raquo; Bootstrap passt mit Hilfe von Media-Queries Ihre Websites und Anwendungen ohne doppelten Code jedem Gerät an</p>
+            </div>
+        </div>
+        <div class="container marketing">
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Funktionen von <span class="text-muted">Bootstrap</span></h2>
+                    <p class="lead">Gestaltungsvorlagen für:</p>
+                    <ul>
+                        <li>Typografie</li>
+                        <li>Formulare</li>
+                        <li>Buttons</li>
+                        <li>Tabellen</li>
+                        <li>Grid-Systeme</li>
+                        <li>Navigation</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapButtons.png" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Herunterladen und installieren</h2>
+                    <a class="btn btn-lg btn-primary" id="butt" href="https://getbootstrap.com" role="button">Bootstrap installieren &raquo;</a>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/downloadBootstrap.png" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapStarter.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <p class="lead" id="main">Index-File erstellen und «Basis-Vorlage» kopieren.</p>
+                    <p>Nichts ausser die Grundlagen: kompiliertes CSS und JavaScript.</p>
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Beispiele verwenden</h2>
+                    <p>Quellecode eines Beispiels suchen und einbinden...</p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapComponents.png" alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">Feste Breite gesamte Breite</h2>
+                    <p>
+                        Bootstrap benötigt ein Element, in dem Seiteninhalte und unser Raster-System verpackt sind.
+
+                        Verwende <i>.container</i> für einen sich anpassenden Container mit einer festen Breite.
+                    </p>
+
+                    <p></p>
+
+                    <p>
+                        Verwende <i>.container-fluid</i> für einen Container, der die gesamte Breite deines Anzeigefensters einnimmt.
+                    </p>
+
+
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapContainer.png" width="400" height="80" />
+                    <hr class="featurette-divider">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapFluid.png" width="400" height="70" />
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <img class="featurette-image img-fluid mx-auto" src="../Pics/Bootstrap/bootstrapGrid.png" alt="Generic placeholder image">
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <h2 class="featurette-heading">Grid-System</h2>
+                    <p>Das Grid ist in 12 Spalten aufgeteilt.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <hr class="featurette-divider">
+            <p class="float-right"><a href="#">Zurück nach oben</a></p>
+            <p>&copy; 2018 BBBaden &middot; Alexander Schilling &middot;</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
